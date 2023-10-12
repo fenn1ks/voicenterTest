@@ -1,0 +1,11 @@
+.default-layout {
+   height: 100vh;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+.nuxt-content {
+   overflow: hidden;
+   height: 100%;
+   overflow-y: auto;
+}
