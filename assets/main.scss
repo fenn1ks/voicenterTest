@@ -1,11 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300&display=swap");
+
 @import "scss/nav";
 @import "scss/header";
 @import "scss/btn";
 @import "scss/items";
 @import "scss/title";
 @import "scss/default.layout";
-
+@import "scss/slides";
 @import "scss/footer";
+
+.default-layout {
+   height: 100vh;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+.nuxt-content {
+   overflow: hidden;
+   height: 100%;
+   overflow-y: auto;
+   scroll-behavior: smooth;
+}
+
+// .nuxt-content {
+//    scroll-behavior: smooth;
+// }
 
 body {
    padding: 0;

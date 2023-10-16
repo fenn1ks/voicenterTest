@@ -30,6 +30,9 @@
       &.active {
          color: red;
       }
+      &:hover {
+         color: red;
+      }
    }
    &__element {
       margin-top: 138px;

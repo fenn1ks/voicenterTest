@@ -4,25 +4,22 @@
       <h3 class="title">section Title</h3>
       <div class="items__wrapper">
          <div class="items__nav">
-         <div class="items__nav-title">Nav</div>
+         <div class="items__nav-title" id="item1">Nav</div>
          <ul class="items__nav-links">
             <li class="items__nav-item">
-               <nuxt-link :to="{path: '/', hash: '#item1'}" active-class="active" class="items__nav-link">
+               <a href="#item1" class="items__nav-link active" >
                   item 1
-               </nuxt-link>
+               </a>
             </li>
             <li class="items__nav-item">
-               <NuxtLink :to="{path: '/', hash: '#item1'}"  class="items__nav-link" >
+               <a href="#item2" class="items__nav-link" >
                   item 2
-               </NuxtLink>
+               </a>
             </li>
             <li class="items__nav-item">
-               <NuxtLink to="#item1" class="items__nav-link" >
+               <a href="#item3" class="items__nav-link" >
                   item 3
-               </NuxtLink>
-               <NuxtLink to="#top3">
-                  <button>To top with NuxtLink to="#top3"</button>
-               </NuxtLink>
+               </a>
             </li>
          </ul>
          </div>
@@ -30,7 +27,7 @@
          <div class="items__element">
             <img src="../assets/Rectangle 4.png" class="items__element-img">
             <div class="items__element-descr">
-               <div class="items__element-title" id="top">Item 1</div>
+               <div class="items__element-title" id="item1">Item 1</div>
                <div class="items__element-subtitle">
                Lorem Ipsum is simply dummy text of the printing and
                typesetting industry. Lorem Ipsum has been the i
@@ -45,12 +42,12 @@
                essentially unchanged. It was popularised in the 1960s with
                the release of Letraset sheets
                </div>
-               <div class="btn items__btn">Read More</div>
+               <button class="btn items__btn">Read More</button>
             </div>
          </div>
          <div class="items__element">
             <div class="items__element-descr">
-               <div class="items__element-title" id="top3">Item 1</div>
+               <div class="items__element-title" id="item2">Item 2</div>
                <div class="items__element-subtitle">
                Lorem Ipsum is simply dummy text of the printing and
                typesetting industry. Lorem Ipsum has been the i
@@ -65,14 +62,14 @@
                essentially unchanged. It was popularised in the 1960s with
                the release of Letraset sheets
                </div>
-               <div class="btn items__btn">Read More</div>
+               <button class="btn items__btn">Read More</button>
             </div>
             <img src="../assets/Rectangle 4.png" class="items__element-img">
          </div>
          <div class="items__element">
             <img src="../assets/Rectangle 4.png" class="items__element-img">
             <div class="items__element-descr">
-               <div class="items__element-title">Item 1</div>
+               <div class="items__element-title" id="item3">Item 3</div>
                <div class="items__element-subtitle">
                Lorem Ipsum is simply dummy text of the printing and
                typesetting industry. Lorem Ipsum has been the i
@@ -87,7 +84,7 @@
                essentially unchanged. It was popularised in the 1960s with
                the release of Letraset sheets
                </div>
-               <div class="btn items__btn">Read More</div>
+               <button class="btn items__btn">Read More</button>
             </div>
          </div>
          </div>

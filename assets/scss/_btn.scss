@@ -8,11 +8,16 @@
    height: 54px;
    justify-content: center;
    align-items: center;
-   color: #FFF;
+   color: #fff;
    text-align: center;
    font-family: Inter;
    font-size: 20px;
    font-weight: 400;
-   background: #F00;
+   background: #f00;
    border: none;
+   border-radius: unset;
+   &:hover {
+      color: #fff;
+      background: #cc0000;
+   }
 }

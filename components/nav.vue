@@ -5,19 +5,19 @@
           <div class="nav__logo">LOGO</div>
           <ul class="nav__links">
             <li class="nav__item">
-              <nuxt-link active-class="active" class="nav__link" to="/">
+              <NuxtLink active-class="active" class="nav__link" to="/">
                 nav 1
-              </nuxt-link>
+              </NuxtLink>
             </li>
             <li class="nav__item">
-              <nuxt-link  class="nav__link" to="/">
+              <NuxtLink  class="nav__link" to="/">
                 nav 2
-              </nuxt-link>
+              </NuxtLink>
             </li>
             <li class="nav__item">
-              <nuxt-link class="nav__link" to="#item1">
+              <NuxtLink class="nav__link" to="/">
                 nav 3
-              </nuxt-link>
+              </NuxtLink>
             </li>
           </ul>
         </div>

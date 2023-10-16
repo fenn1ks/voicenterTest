@@ -1,6 +1,6 @@
 <template>
    <div class="default-layout">
-      <Nav />
+      <Nav class="default-nav" />
       <NuxtPage class="nuxt-content"/>
    </div>
 </template>

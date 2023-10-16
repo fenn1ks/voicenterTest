@@ -1,0 +1,71 @@
+.slides {
+   padding-top: 60px;
+   height: 795px;
+
+   &__element {
+      margin: 60px auto 0 auto;
+      width: 85%;
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+   }
+   &__element-descr {
+      margin-top: 51px;
+   }
+
+   &__element-title {
+      color: #000;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-weight: 700;
+   }
+
+   &__element-subtitle {
+      margin-top: 23px;
+      color: #000;
+      font-family: Montserrat;
+      font-weight: 400;
+      line-height: 145%;
+   }
+
+   &__element-text {
+      margin-top: 24px;
+      color: #000;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-weight: 700;
+   }
+
+   &__btn {
+      margin-top: 24px;
+   }
+
+   .carousel-indicators {
+      gap: 7px;
+      margin-bottom: -6rem;
+      button {
+         width: 12.5px;
+         height: 12.5px;
+         border-radius: 50%;
+         background-color: #f00;
+      }
+   }
+   .carousel-control-prev {
+      opacity: 1;
+      justify-content: start;
+   }
+   .carousel-control-prev-icon {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='24' viewBox='0 0 26 24' fill='none'%3E%3Cpath d='M0.939341 10.9393C0.353554 11.5251 0.353554 12.4749 0.939341 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939341 10.9393ZM26 10.5L2 10.5V13.5L26 13.5V10.5Z' fill='black'/%3E%3C/svg%3E");
+      background-size: unset;
+   }
+
+   .carousel-control-next {
+      opacity: 1;
+      justify-content: end;
+   }
+
+   .carousel-control-next-icon {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='24' viewBox='0 0 26 24' fill='none'%3E%3Cpath d='M25.0607 13.0607C25.6464 12.4749 25.6464 11.5251 25.0607 10.9393L15.5147 1.3934C14.9289 0.807611 13.9792 0.807611 13.3934 1.3934C12.8076 1.97919 12.8076 2.92893 13.3934 3.51472L21.8787 12L13.3934 20.4853C12.8076 21.0711 12.8076 22.0208 13.3934 22.6066C13.9792 23.1924 14.9289 23.1924 15.5147 22.6066L25.0607 13.0607ZM-1.03343e-09 13.5L24 13.5L24 10.5L1.03343e-09 10.5L-1.03343e-09 13.5Z' fill='black'/%3E%3C/svg%3E");
+      background-size: unset;
+   }
+}
