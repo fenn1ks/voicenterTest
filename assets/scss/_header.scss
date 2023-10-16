@@ -1,10 +1,11 @@
 .header {
-   height: 441px;
    background: #eee;
+   padding-bottom: 30px;
    &__wrapper {
       padding-top: 43px;
       display: flex;
       justify-content: space-between;
+      align-items: center;
    }
    &__descr {
       max-width: 568px;
@@ -37,8 +38,9 @@
       width: 614px;
       height: 321px;
       fill: #808080;
+      object-fit: cover;
    }
    &__btn {
-      margin-top: 50px;
+      margin-top: 30px;
    }
 }

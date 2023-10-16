@@ -18,7 +18,7 @@
 </template>
 <script>
 export default {
-   name: 'foot'
+   name: 'Footer'
 }
 </script>
 <style lang="">

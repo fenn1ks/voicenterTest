@@ -38,9 +38,13 @@
       margin-top: 138px;
       display: flex;
       justify-content: center;
+      align-items: center;
       gap: 50px;
       &:first-child {
          margin-top: 0;
+      }
+      &:nth-child(even) {
+         flex-direction: row-reverse;
       }
    }
    &__element-descr {
@@ -51,6 +55,9 @@
    }
    &__element-img {
       background: #808080;
+      width: 476px;
+      height: 383px;
+      object-fit: cover;
    }
    &__element-title {
       color: #000;
