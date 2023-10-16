@@ -35,6 +35,10 @@
         font-family: Montserrat;
         font-size: 20px;
         font-weight: 700;
+        //white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 650px;
     }
     &__element-img {
         width: 577px;
