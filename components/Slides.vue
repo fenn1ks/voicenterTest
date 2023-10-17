@@ -2,19 +2,13 @@
     <section class="slides">
         <div class="container">
             <div class="title">slides Section</div>
-            <div id="carousel" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carousel" :data-bs-slide-to="index"
-                        :class="{ 'active': activeImgIndex === index }" @click="setActiveImgIndex(index)"
-                        aria-current="true" :aria-label="item.title" v-for="(item, index) in slidesComponentData">
-                    </button>
-                </div>
-                <div class="carousel-inner">
-                    <div :class="{ 'carousel-item': true, 'active': activeImgIndex === index }"
-                        v-for="(item, index) in slidesComponentData">
+            <Carousel :wrap-around="true">
+                <Slide v-for="(item, index) in slidesComponentData" :key="index">
+                    <div class="carousel__item">
                         <div class="slides__element">
                             <div class="slides__element-descr">
-                                <div class="slides__element-title">{{ item.title }}</div>
+                                <div class="slides__element-title">
+                                    {{ item.title }}</div>
                                 <div class="slides__element-subtitle">
                                     {{ item.subtitle }}
                                 </div>
@@ -25,30 +19,32 @@
                             <img :src="item.image" :alt="item.imageAlt" class="slides__element-img">
                         </div>
                     </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev"
-                    @click="setActiveImgIndex(activeImgIndex - 1)">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next"
-                    @click="setActiveImgIndex(activeImgIndex + 1)">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+                </Slide>
+                <template #addons>
+                    <Navigation>
+                        <template #next>
+                            <div class="control-next-icon"></div>
+                        </template>
+                        <template #prev>
+                            <div class="control-prev-icon"></div>
+                        </template>
+                    </Navigation>
+                    <Pagination />
+                </template>
+            </Carousel>
         </div>
     </section>
 </template>
+  
 <script>
-export default {
+import { defineComponent } from 'vue'
+import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
+
+import 'vue3-carousel/dist/carousel.css'
+
+export default defineComponent({
     props: {
         slidesComponentData: Array,
-    },
-    data() {
-        return {
-            activeImgIndex: 0,
-        };
     },
     updated() {
         this.$nextTick(function () {
@@ -60,20 +56,21 @@ export default {
             console.log(this.slidesComponentData);
         },
         cutText(text) {
-            if (text.length > 365) {
-                return text.slice(0, 365) + '...';
-            } else {
-                return text;
+            if (text.length > 355) {
+                return text.slice(0, 355) + '...';
             }
-        },
-        setActiveImgIndex(index) {
-            console.log(index);
-            this.activeImgIndex = index;
+
+            return text;
         },
     },
-    name: "Slides"
-}
+    name: "Slides",
+    components: {
+        Carousel,
+        Slide,
+        Pagination,
+        Navigation,
+    },
+})
 </script>
-<style lang="">
-   
-</style>
+  
+<style></style>

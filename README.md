@@ -1,75 +1,68 @@
-# Nuxt 3 Minimal Starter
+Hello!
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+To start working with the project, do the following:
+
+1. Clone the repository to yourself
+   -To do this, you need to go to the desired directory
+   where you want to clone the project, and write the
+   cloning command in the console
+
+```bash
+git clone https://github.com/fenn1ks/voicenterTest
+```
+
+2. Install all project dependencies(depending on what package manager you use):
 
 ## Setup
-
-Make sure to install the dependencies:
 
 ```bash
 # npm
 npm install
-
 # pnpm
 pnpm install
-
 # yarn
 yarn install
-
 # bun
 bun install
 ```
 
-## Development Server
+3. Starting a server for development(depending on what package manager you use):
 
 Start the development server on `http://localhost:3000`:
 
 ```bash
 # npm
 npm run dev
-
 # pnpm
 pnpm run dev
-
 # yarn
 yarn dev
-
 # bun
 bun run dev
 ```
 
-## Production
-
-Build the application for production:
+4. Build the application for production(depending on what package manager you use):
 
 ```bash
 # npm
 npm run build
-
 # pnpm
 pnpm run build
-
 # yarn
 yarn build
-
 # bun
 bun run build
 ```
 
-Locally preview production build:
+4. Locally preview production build(depending on what package manager you use):
 
 ```bash
 # npm
 npm run preview
-
 # pnpm
 pnpm run preview
-
 # yarn
 yarn preview
-
 # bun
 bun run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
