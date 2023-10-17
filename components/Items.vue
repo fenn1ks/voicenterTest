@@ -46,6 +46,3 @@ export default {
     name: 'Items'
 }
 </script>
-<style lang="">
-   
-</style>

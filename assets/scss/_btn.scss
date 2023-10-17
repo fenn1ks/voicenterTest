@@ -1,9 +1,5 @@
 .btn {
     cursor: pointer;
-    color: #000;
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 400;
     display: flex;
     width: 201px;
     height: 54px;
@@ -16,7 +12,6 @@
     font-weight: 400;
     background: #f00;
     border: none;
-    border-radius: unset;
     &:hover {
         color: #fff;
         background: #cc0000;

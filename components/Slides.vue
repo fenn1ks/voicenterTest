@@ -3,7 +3,7 @@
         <div class="container">
             <div class="title">slides Section</div>
             <Carousel :wrap-around="true">
-                <Slide v-for="(item, index) in slidesComponentData" :key="index">
+                <Slide v-for="(item) in slidesComponentData" :key="item.key">
                     <div class="carousel__item">
                         <div class="slides__element">
                             <div class="slides__element-descr">
@@ -46,15 +46,8 @@ export default defineComponent({
     props: {
         slidesComponentData: Array,
     },
-    updated() {
-        this.$nextTick(function () {
-            this.consol();
-        })
-    },
+
     methods: {
-        consol() {
-            console.log(this.slidesComponentData);
-        },
         cutText(text) {
             if (text.length > 355) {
                 return text.slice(0, 355) + '...';
@@ -73,4 +66,3 @@ export default defineComponent({
 })
 </script>
   
-<style></style>

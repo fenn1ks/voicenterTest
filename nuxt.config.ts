@@ -5,4 +5,8 @@ export default defineNuxtConfig({
   css: [
     '~/assets/main.scss'
   ],
+  app: {
+    baseURL: '/voicenterTest/',
+    buildAssetsDir: 'assets'
+  }
 })
